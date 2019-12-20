@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="110px" viewBox="0 0 258 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.1 (89650) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Business-Cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-43.000000, -134.000000)">
+            <g id="Group-3" transform="translate(45.000000, 141.000000)">
+                <g id="Group" transform="translate(139.000000, 12.000000)" fill="#FC8221" font-family="OpenSans-Light, Open Sans" font-weight="300" letter-spacing="12">
+                    <text id="LABS" font-size="28.8">
+                        <tspan x="8.89375" y="75.4">LABS</tspan>
+                    </text>
+                    <text id="PYZA" font-size="32.64">
+                        <tspan x="5.6425" y="35">PYZA</tspan>
+                    </text>
+                </g>
+                <path d="M0,94.7369529 C34.0812425,100.644884 53.9843752,85.8269568 59.7093981,50.2831722 C67.1159981,-1.3173 87.395231,-1.53909823 99.6204462,0.679524735 C111.845662,2.8981477 124.993915,20.4633124 113.694982,37.5557595 C87.2947927,71.2865238 42.6996337,8.94208971 12.0384603,24.9530484" id="Path" stroke="#FC8221" stroke-width="12.8"></path>
+            </g>
+        </g>
+    </g>
+</svg>

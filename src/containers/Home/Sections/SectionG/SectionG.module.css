@@ -1,0 +1,19 @@
+.sectionGContainer {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin-top: 60px;
+  background-color: #13171f;
+}
+
+.image {
+  width: 30%;
+  min-width: 300px;
+  flex: 0.5;
+}
+
+.map {
+  width: 60%;
+  align-self: flex-start;
+  flex: 1;
+}

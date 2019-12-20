@@ -1,0 +1,25 @@
+.sectionAContainer {
+  padding: 20px;
+  margin: 20px;
+}
+
+.titleText {
+  font-weight: 900;
+}
+.sectionAText {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./black.svg");
+  height: 12px;
+  width: 12px;
+  min-width: 12px;
+  margin-left: 16px;
+}
