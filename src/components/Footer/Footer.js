@@ -1,60 +1,62 @@
 import React from "react";
-import styles from "./Footer.module.css";
 import logo from "../../assets/LogoOrange.png";
+import styles from "./Footer.module.css";
 
 export const Footer = () => {
   return (
     <div>
       <div className={styles.footerContainer}>
-        <img className={styles.logo} src={logo} />
+        <img alt="Logo" className={styles.logo} src={logo} />
         <div></div>
-        <div className={styles.openSourceText}>
+        <div className={styles.openSource}>
           <div>OPEN SOURCE</div>
-          <div className={styles.gitHub}>Github</div>
+          <div className={styles.contentText}>
+            <div>Github</div>
+          </div>
         </div>
         <div className={styles.openSource}>
           <div>HIRE DEVELOPERS</div>
           <div className={styles.contentText}>
-            Node Developers<br></br>
-            React Developers<br></br>
-            React Native Developers<br></br>
-            iOS Developers<br></br>
-            Android Developers<br></br>
-            Full Stack Developers<br></br>
+            <div>Node Developers</div>
+            <div>React Developers</div>
+            <div>React Native Developers</div>
+            <div>iOS Developers</div>
+            <div>Android Developers</div>
+            <div>Full Stack Developers</div>
           </div>
         </div>
         <div className={styles.openSource}>
           <div>
-            HIRE TRANSLATORS<br></br>& TRANSCRIBERS
+            <div>HIRE TRANSLATORS <br/>& TRANSCRIBERS</div>
           </div>
           <div className={styles.contentText}>
-            Translation & Transcription<br></br>
-            Subtitling<br></br>
-            Content Writing<br></br>
-            Creative Writing<br></br>
-            Ghostwriting<br></br>
-            Fiction Writing<br></br>
-            Data Entry<br></br>
-            Language Experts-Hindi<br></br>English
+            <div>Translation & Transcription</div>
+            <div>Subtitling</div>
+            <div>Content Writing</div>
+            <div>Creative Writing</div>
+            <div>Ghostwriting</div>
+            <div>Fiction Writing</div>
+            <div>Data Entry</div>
+            <div>Language Experts-HindiEnglish</div>
           </div>
         </div>
         <div className={styles.openSourceSocial}>
           <div>
-            CONNECT<br></br>
+            <div>CONNECT</div>
             <div className={styles.social}>Social</div>
           </div>
           <div className={styles.socialText}>
-            Instagram<br></br>
-            Facebook<br></br>
-            Medium<br></br>
+            <div>Instagram</div>
+            <div>Facebook</div>
+            <div>Medium</div>
           </div>
           <div className={styles.address}>
-            Our Office<br></br>
-            <br></br>Indira Nagar, Bengaluru, India
+            <div>Our Office</div>
+            <div>Indira Nagar, Bengaluru, India</div>
           </div>
           <div className={styles.address}>
-            <br></br>Hire Us!<br></br>
-            <a href="">info@pyzalabs.com</a>
+            <div>Hire Us!</div>
+            <a href="mailto:info@pyzalabs.com">info@pyzalabs.com</a>
           </div>
         </div>
       </div>

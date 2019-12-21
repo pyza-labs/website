@@ -11,6 +11,7 @@
   min-width: 100px;
   width: 20%;
   max-width: 200px;
+  margin-right: 64px;
 }
 
 .openSource {
@@ -19,34 +20,23 @@
   padding: 12px 8px;
   margin-left: auto;
   font-size: 18px;
-  font-weight: 600;
 }
 
-.gitHub {
-  margin: 12px 0 0 0;
-  padding: 8px 8px 8px 0;
-  font-size: 14px;
-  letter-spacing: 0.9px;
-  text-align: left;
+.openSource > :first-child {
+  font-weight: 600;
+  margin-bottom: 24px;
 }
 
 .contentText {
-  margin: 16px 0 0 0;
-  padding: 8px 8px 8px 0;
   font-size: 14px;
-  color: ;
   line-height: 2;
+  font-weight: 300;
   letter-spacing: 0.9px;
   text-align: left;
 }
 
-.openSourceText {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 8px;
-  margin-left: auto;
-  font-size: 18px;
-  font-weight: 600;
+.contentText :not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .social {
@@ -66,19 +56,32 @@
 
 .socialText {
   margin-top: 8px;
-  padding: 8px 8px 8px 0;
+  margin-bottom: 16px;
   font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.9;
+  font-weight: 300;
   text-align: left;
+}
+
+.socialText > * {
+  margin-bottom: 12px;
 }
 
 .address {
   font-size: 16px;
+  margin-top: 16px;
 }
 
 .address a {
   color: unset;
+  font-weight: 300;
+}
+
+.address > :first-child {
+  margin-bottom: 12px;
+}
+
+.address > :last-child {
+  font-weight: 300;
 }
 
 .copyright {

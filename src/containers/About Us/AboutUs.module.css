@@ -1,8 +1,7 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding-top: 60px;
 }
 

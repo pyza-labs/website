@@ -15,7 +15,6 @@ export const AboutUs = () => {
       <SectionC />
       <SectionD />
       <SectionE />
-      <div className={styles.line}></div>
     </div>
   );
 };

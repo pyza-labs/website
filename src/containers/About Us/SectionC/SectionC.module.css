@@ -2,42 +2,39 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 50px;
-  margin: 50px;
+  margin: 64px 15vw;
 }
 
 .line {
-  padding: 0.5px 0;
   width: 20px;
+  height: 2px;
   background-color: black;
   margin-right: 14px;
-  margin-bottom: 6px;
 }
 
 .textLeft {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: center;
   font-size: 14px;
   font-weight: 600;
-  width: 100%;
-  padding: 0 16px;
+  flex: 0.3;
 }
 
-.rightTextContainer {
-  padding: 0 16px 16px 16px;
+.rightTextContainer { 
+  flex: 0.7;
 }
 
 .rightTextTitle {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 500;
-  padding-bottom: 28px;
 }
 
 .rightText {
+  margin-top: 24px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.4px;
   opacity: 0.8;
 }
