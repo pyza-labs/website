@@ -1,6 +1,7 @@
 import React from "react";
 import { Home } from "./containers";
 import { Navbar } from "./components";
+import { Footer } from "./components";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
 
       <Home />
+      <Footer />
     </div>
   );
 };

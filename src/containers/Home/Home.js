@@ -7,7 +7,7 @@ import { SectionD } from "./Sections/SectionD/SectionD";
 import { SectionE } from "./Sections/SectionE/SectionE";
 import { SectionF } from "./Sections/SectionF/SectionF";
 import { SectionG } from "./Sections/SectionG/SectionG";
-import { SectionH } from "./Sections/SectionH/SectionH";
+import { SectionH } from "../../components/Footer/Footer";
 
 export const Home = () => {
   return (
@@ -33,7 +33,6 @@ export const Home = () => {
       <div>
         <SectionG />
       </div>
-      <SectionH />
     </div>
   );
 };
