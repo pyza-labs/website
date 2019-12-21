@@ -1,0 +1,43 @@
+.sectionC {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 50px;
+  margin: 50px;
+}
+
+.line {
+  padding: 0.5px 0;
+  width: 20px;
+  background-color: black;
+  margin-right: 14px;
+  margin-bottom: 6px;
+}
+
+.textLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.rightTextContainer {
+  padding: 0 16px 16px 16px;
+}
+
+.rightTextTitle {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 28px;
+}
+
+.rightText {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  opacity: 0.8;
+}

@@ -1,0 +1,47 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.number {
+  font-size: 60px;
+  font-family: monospace;
+  font-weight: 900;
+  line-height: 3;
+  color: rgba(0, 90, 270, 0.9);
+  width: 100%;
+  text-align: center;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.rightTitle {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 4px 16px 16px 16px;
+}
+
+.rightText {
+  max-width: 900px;
+  font-size: 14px;
+  opacity: 0.8;
+  padding: 0 16px 16px 16px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+}

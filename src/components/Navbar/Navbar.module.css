@@ -9,6 +9,7 @@
   width: calc(100% - 64px);
   min-width: 400px;
   color: #fff;
+  background-color: rgba(113, 146, 255);
 }
 
 .logo img {
