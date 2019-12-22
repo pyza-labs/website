@@ -1,6 +1,7 @@
+import { Link } from "@reach/router";
 import React from "react";
-import styles from "./Navbar.module.css";
 import pyzaLogo from "../../assets/Logo.png";
+import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
   return (
@@ -24,7 +25,7 @@ export const Navbar = () => {
         <a href="" className={styles.plusIcon}></a>
       </div>
       <div className={styles.aboutUs}>
-        <a href="">About Us</a>
+        <Link to="about">About Us</Link>
       </div>
     </div>
   );

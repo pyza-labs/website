@@ -1,13 +1,16 @@
+import { Router } from '@reach/router';
 import React from "react";
-import { Home, AboutUs } from "./containers";
-import { Navbar } from "./components";
-import { Footer } from "./components";
+import { Footer, Navbar } from "./components";
+import { AboutUs, Home } from "./containers";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <AboutUs />
+      <Router>
+        <Home path="/" default/>
+        <AboutUs path="about"/>
+      </Router>
       <Footer />
     </div>
   );
