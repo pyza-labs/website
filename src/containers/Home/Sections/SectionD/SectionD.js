@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./SectionD.module.css";
-import image from "./images.png";
 import { Button } from "../../../../components/Button/Button";
+import image from "./images.png";
+import styles from "./SectionD.module.css";
 
 export const SectionD = () => {
   return (
@@ -12,8 +12,8 @@ export const SectionD = () => {
       <div className={styles.text}>
         "We are grateful to have PyzaLabs as our<br></br> go to agency"
       </div>
-      <div className={styles.nameTitle}>Rishab Singh</div>
-      <div className={styles.nameText}>CEO & Director@Gradly</div>
+      <div className={styles.nameTitle}>Rishabh Singh</div>
+      <div className={styles.nameText}>CEO & Founder@Gradly</div>
       <Button />
     </div>
   );

@@ -3,18 +3,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 32px;
+  padding: 16px 32px;
   height: 40px;
   width: calc(100% - 64px);
   min-width: 400px;
   color: #fff;
-  background-color: rgba(113, 146, 255);
+  background-color: rgba(103, 0, 255, 0.5);
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+.container[aria-label="dark"] {
+  background-color: #121212;
 }
 
 .logo img {
   display: block;
   margin-right: 80px;
-  padding: 4px 8px;
   width: 100px;
 }
 
@@ -25,7 +30,9 @@
 .services a,
 .process a {
   text-decoration: none;
-  color: unset;
+  font-size: 16px;
+  color: white;
+  opacity: 0.7;
 }
 
 .work a:hover,
@@ -33,9 +40,13 @@
 .aboutUs a:hover,
 .process a:hover,
 .services a:hover {
-  text-decoration: underline;
-  color: rgb(113, 146, 255);
+  color: white;
+  opacity: 1;
   text-shadow: 1px 0.5px rgba(113, 146, 255, 0.2);
+}
+
+.container[aria-label="dark"] a:hover {
+  color: #DA451A;
 }
 
 .work {
@@ -64,12 +75,18 @@
 
 .quote {
   display: flex;
+  align-items: center;
   margin-left: auto;
   padding: 4px 8px;
   margin-right: 40px;
   font-size: 14px;
   font-weight: 500;
   opacity: 0.8;
+}
+
+.quoteButton {
+  display: flex;
+  align-items: center;
 }
 
 .aboutUs {
@@ -80,12 +97,8 @@
   opacity: 0.8;
 }
 
-a.plusIcon {
-  display: block;
-  background-image: url("../../assets/white.svg");
-  height: 12px;
-  width: 12px;
-  min-width: 12px;
+.quote img {
+  height: 16px;
+  width: 16px;
   margin-left: 8px;
-  margin-top: 4px;
 }

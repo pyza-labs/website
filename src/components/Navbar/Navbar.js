@@ -1,28 +1,34 @@
 import { Link } from "@reach/router";
 import React from "react";
 import pyzaLogo from "../../assets/Logo.png";
+import pyzaLogoOrange from '../../assets/LogoOrange.png';
+import plusIcon from '../../assets/white.svg';
 import styles from "./Navbar.module.css";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
-    <div className={styles.container}>
+    <div aria-label={props.dark ? 'dark' : 'light'} className={styles.container}>
       <div className={styles.logo}>
-        <a href="">
-          <img src={pyzaLogo} />
-        </a>
+        <Link to="/">
+          <img alt="logo" src={props.dark ? pyzaLogoOrange : pyzaLogo} />
+        </Link>
       </div>
       <div className={styles.work}>
-        <a href="">Work</a>
+        <Link to="/#work">Work</Link>
       </div>
       <div className={styles.process}>
-        <a href="">Process</a>
+        <Link to="/#process">Process</Link>
       </div>
       <div className={styles.services}>
-        <a href="">Services</a>
+        <Link to="/#services">Services</Link>
       </div>
       <div className={styles.quote}>
-        <a href="">Ask for a Free Quote!</a>
-        <a href="" className={styles.plusIcon}></a>
+        <Link to="contact">
+          <div className={styles.quoteButton}>
+          Ask for a Free Quote!
+          <img alt="+" src={plusIcon}/>
+          </div>
+        </Link>
       </div>
       <div className={styles.aboutUs}>
         <Link to="about">About Us</Link>

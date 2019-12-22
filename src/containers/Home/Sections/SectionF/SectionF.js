@@ -1,17 +1,18 @@
 import React from "react";
-import styles from "./SectionF.module.css";
 import research from "../../../../assets/analysis.svg";
-import line from "../../../../assets/noun_dotted line_19124.svg";
-import design from "../../../../assets/brush.svg";
 import build from "../../../../assets/blueprint.svg";
+import design from "../../../../assets/brush.svg";
+import line from "../../../../assets/noun_dotted line_19124.svg";
+import { Button } from "../../../../components/Button/Button";
+import styles from "./SectionF.module.css";
 
 export const SectionF = () => {
   return (
     <div className={styles.sectionFContainer}>
-      <div className={styles.text}>
+      <div className={styles.title}>
         Our process is here to help<br></br>your business grow
       </div>
-      <div className={styles.imgContainer}>
+      <div id="process" className={styles.imgContainer}>
         <img className={styles.research} src={research} />
         <img className={styles.linea} src={line} />
         <img className={styles.design} src={design} />
@@ -49,6 +50,7 @@ export const SectionF = () => {
       <div className={styles.endText}>
         How do we successfully transform an idea into a functioning product?
       </div>
+      <Button/>
     </div>
   );
 };

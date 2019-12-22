@@ -1,25 +1,36 @@
 .sectionAContainer {
-  padding: 20px;
-  margin: 20px;
+  padding: 52px 52px 0 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  background-image: radial-gradient(
+    farthest-corner at 0% 0%,
+    rgba(0, 0, 253, 0.7),
+    rgb(103, 0, 255)
+  );
+  overflow: hidden;
 }
 
 .titleText {
   font-weight: 900;
-}
-.sectionAText {
-  font-size: 16px;
-  opacity: 0.7;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  font-size: 64px;
+  color: white;
 }
 
-.icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("./black.svg");
-  height: 12px;
-  width: 12px;
-  min-width: 12px;
-  margin-left: 16px;
+.sectionAText {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.circle {
+  width: 90vh;
+  height: 90vh;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

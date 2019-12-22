@@ -1,50 +1,71 @@
-.sectionBContainer {
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 32px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 48px;
   font-weight: 500;
-  text-shadow: 0.5px 0.1px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  width: 50%;
+  align-self: center;
   margin-top: 120px;
-  margin-left: 60px;
+  margin-bottom: 80px;
+  line-height: 56px;
 }
 
-.imageTextContainer {
+.projectPreviewContainer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
-  padding: 100px 100px 0 100px;
-  flex-wrap: wrap-reverse;
+  margin: 64px 128px;
 }
 
-.imageTextContainer img {
-  width: 400px;
-  min-width: 300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px;
+.projectPreviewContainer[aria-label='reverse'] {
+  flex-direction: row-reverse;
 }
 
-.textTitle {
+.projectPreviewContainer > .imageContainer > .circle {
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff3232, #f7e6a7);
+}
+
+.projectPreviewContainer > .imageContainer {
   display: flex;
-  flex-direction: column;
-  font-size: 28px;
-  font-weight: 500;
-  margin-right: auto;
-  padding: 4px;
+  width: 50%;
 }
 
-.textTitle img {
-  width: 180px;
-  margin: 4px 4px 8px 0;
-  padding: 4px 4px 8px 0;
+.projectPreviewContainer > .descriptionContainer {
+  width: 50%;
+  margin-left: 64px;
 }
 
-.text {
-  font-size: 20px;
-  opacity: 0.6;
-  margin-right: auto;
-  padding: 4px;
+.projectPreviewContainer > .descriptionContainer > img {
+  height: 68px;
 }
+
+.projectPreviewContainer > .descriptionContainer > .companyName {
+  font-size: 30px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.projectPreviewContainer > .descriptionContainer > .companyName > .line {
+  height: 3px;
+  margin-left: 8px;
+  width: 32px;
+  background-color: #212121;
+}
+
+.projectPreviewContainer > .descriptionContainer > .description {
+  font-size: 30px;
+  opacity: 0.8;
+  font-weight: 300;
+  margin-top: 12px;
+  line-height: 40px;
+}
+
