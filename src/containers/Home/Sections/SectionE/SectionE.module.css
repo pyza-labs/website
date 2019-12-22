@@ -22,12 +22,12 @@
 .content img:not(:last-child) {
   width: 40%;
   min-width: 200px;
-  max-width: 600px;
 }
 
 .contentDescription {
   display: flex;
-  max-width: 60%;
+  width: 60%;
+  max-width: 600px;
   flex-direction: column;
   margin-left: 64px;
   margin-right: 128px;
