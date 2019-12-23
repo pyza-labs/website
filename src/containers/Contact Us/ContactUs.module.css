@@ -1,0 +1,246 @@
+.contactUs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.4;
+  margin-right: 140px;
+  margin-bottom: 140px;
+  height: 50vh;
+  max-width: 500px;
+  padding-top: 240px;
+  padding-bottom: 128px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-radius: 0 0 32px 0;
+}
+
+.leftContainer > img {
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  margin-bottom: 64px;
+  align-self: left;
+}
+
+.leftContainer > .clientReview {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.leftContainer > .clientName {
+  font-weight: 600;
+  line-height: 2;
+  margin-top: 52px;
+}
+
+.leftContainer > .clientName > .clientDesignation {
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 1;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  text-align: left;
+  margin-left: auto;
+  margin-top: 64px;
+}
+
+.headingRight {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.subHeadingRight {
+  margin-top: 32px;
+  font-size: 18px;
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+
+.formContainer > .formSubContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.subContainerLeft {
+  margin-right: 48px;
+}
+
+.subContainerLeft > .name {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  opacity: 0.5;
+}
+
+.subContainerLeft > .name > img {
+  width: 5px;
+  margin-left: 4px;
+  margin-bottom: 12px;
+}
+
+.subContainerLeft > .nameInput {
+  text-decoration: none;
+  outline: none;
+  width: 70%;
+  min-width: 200px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subContainerLeft > .phoneNumber {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  opacity: 0.5;
+  margin-top: 48px;
+}
+
+.subContainerLeft > .phoneNumber > img {
+  width: 5px;
+  margin-left: 4px;
+  margin-bottom: 12px;
+}
+
+.subContainerLeft > .phoneNumberInput {
+  text-decoration: none;
+  outline: none;
+  min-width: 200px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subContainerRight {
+  margin-right: auto;
+}
+
+.subContainerRight > .emailAddress {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  opacity: 0.5;
+}
+
+.subContainerRight > .emailAddress > img {
+  width: 5px;
+  margin-left: 4px;
+  margin-bottom: 12px;
+}
+
+.subContainerRight > .emailAddressInput {
+  text-decoration: none;
+  width: 70%;
+  min-width: 200px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.subContainerRight > .budgetRange {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  opacity: 0.5;
+  margin-top: 48px;
+}
+
+.subContainerRight > .budgetRange > img {
+  width: 5px;
+  margin-left: 4px;
+  margin-bottom: 12px;
+}
+
+.subContainerRight > .budgetRangeInput {
+  text-decoration: none;
+  min-width: 200px;
+  width: 70%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+
+.bottomContainer > .project {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  opacity: 0.5;
+}
+
+.bottomContainer > .project > img {
+  width: 5px;
+  margin-left: 4px;
+  margin-bottom: 12px;
+}
+
+.bottomContainer > .projectInput {
+  text-decoration: none;
+  outline: none;
+  min-width: 450px;
+  border: none;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.submitContainer {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.checkBox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  appearance: none;
+  border-radius: 2px;
+  margin-right: 16px;
+  outline: none;
+}
+
+.checkBox:checked {
+  background-color: rgba(0, 90, 270);
+}
+
+.checkBoxText {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  opacity: 0.5;
+}
+
+.submitContainer > .button {
+  margin-left: 64px;
+}

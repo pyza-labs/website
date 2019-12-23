@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../../../components/Button/Button";
-import image from "./images.png";
+import image from "../../../../assets/avatar.png";
 import styles from "./SectionD.module.css";
 
 export const SectionD = () => {
