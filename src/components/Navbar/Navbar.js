@@ -1,13 +1,16 @@
 import { Link } from "@reach/router";
 import React from "react";
 import pyzaLogo from "../../assets/Logo.png";
-import pyzaLogoOrange from '../../assets/LogoOrange.png';
-import plusIcon from '../../assets/white.svg';
+import pyzaLogoOrange from "../../assets/LogoOrange.png";
+import plusIcon from "../../assets/white.svg";
 import styles from "./Navbar.module.css";
 
-export const Navbar = (props) => {
+export const Navbar = props => {
   return (
-    <div aria-label={props.dark ? 'dark' : 'light'} className={styles.container}>
+    <div
+      aria-label={props.dark ? "dark" : "light"}
+      className={styles.container}
+    >
       <div className={styles.logo}>
         <Link to="/">
           <img alt="logo" src={props.dark ? pyzaLogoOrange : pyzaLogo} />
@@ -25,8 +28,8 @@ export const Navbar = (props) => {
       <div className={styles.quote}>
         <Link to="contact">
           <div className={styles.quoteButton}>
-          Ask for a Free Quote!
-          <img alt="+" src={plusIcon}/>
+            Ask for a Free Quote!
+            <img alt="+" src={plusIcon} />
           </div>
         </Link>
       </div>

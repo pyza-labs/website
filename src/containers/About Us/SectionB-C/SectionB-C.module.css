@@ -1,0 +1,25 @@
+.sectionBC {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+  padding: 0 128px;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.sectionBC > img {
+  width: 30%;
+  max-width: 400px;
+  min-width: 300px;
+  clip-path: inset(0 0 16px 0);
+}
+
+.sectionBC > img:first-child {
+  margin-bottom: 200px;
+}
+
+.sectionBC > img:last-child {
+  clip-path: inset(0 0 30px 0);
+  margin-top: 260px;
+}

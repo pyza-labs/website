@@ -16,7 +16,7 @@ export const SectionA = () => {
       <Button color={light} />
       <div className={styles.circle}>
         <svg viewBox="0 0 50 50">
-          <circle cx="32" cy="16" r="25" fill="#FFF"/>
+          <circle cx="32" cy="16" r="25" fill="#FFF" />
         </svg>
       </div>
     </div>

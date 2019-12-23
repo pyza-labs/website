@@ -5,15 +5,15 @@ import { SectionB } from "./SectionB";
 import { SectionC } from "./SectionC/SectionC";
 import { SectionD } from "./SectionD/SectionD";
 import { SectionE } from "./SectionE/SectionE";
+import { SectionBC } from "./SectionB-C/SectionB-C";
 
 export const AboutUs = () => {
   return (
     <div className={styles.aboutUs}>
       <SectionA />
       <SectionB />
-      <div className={styles.line}></div>
+      <SectionBC />
       <SectionC />
-      <div className={styles.line}></div>
       <SectionD />
       <div className={styles.line}></div>
       <SectionE />
