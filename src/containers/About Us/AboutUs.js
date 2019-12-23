@@ -13,7 +13,9 @@ export const AboutUs = () => {
       <SectionB />
       <div className={styles.line}></div>
       <SectionC />
+      <div className={styles.line}></div>
       <SectionD />
+      <div className={styles.line}></div>
       <SectionE />
     </div>
   );

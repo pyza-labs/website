@@ -20,7 +20,7 @@
 }
 
 .line {
-  padding: 0.5px 0;
+  height: 2px;
   width: 20px;
   background-color: black;
   margin-right: 14px;

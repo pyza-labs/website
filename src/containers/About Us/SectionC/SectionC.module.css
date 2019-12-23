@@ -22,18 +22,18 @@
   flex: 0.3;
 }
 
-.rightTextContainer { 
+.rightTextContainer {
   flex: 0.7;
 }
 
 .rightTextTitle {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
 }
 
 .rightText {
   margin-top: 24px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.4px;
   opacity: 0.8;

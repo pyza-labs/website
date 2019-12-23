@@ -27,7 +27,9 @@ export const Footer = () => {
         </div>
         <div className={styles.openSource}>
           <div>
-            <div>HIRE TRANSLATORS <br/>& TRANSCRIBERS</div>
+            <div>
+              HIRE TRANSLATORS <br />& TRANSCRIBERS
+            </div>
           </div>
           <div className={styles.contentText}>
             <div>Translation & Transcription</div>
@@ -37,7 +39,11 @@ export const Footer = () => {
             <div>Ghostwriting</div>
             <div>Fiction Writing</div>
             <div>Data Entry</div>
-            <div>Language Experts-HindiEnglish</div>
+            <div>
+              Language Experts-Hindi
+              <br />
+              English
+            </div>
           </div>
         </div>
         <div className={styles.openSourceSocial}>
