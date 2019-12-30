@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setDarkNavbar(window.scrollY > 800);
+      setDarkNavbar(window.scrollY > 700);
     });
   }, []);
 

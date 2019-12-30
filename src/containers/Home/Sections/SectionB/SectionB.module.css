@@ -29,13 +29,15 @@
 .projectPreviewContainer > .imageContainer > .circle {
   height: 50vh;
   width: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background: linear-gradient(45deg, #ff3232, #f7e6a7);
 }
 
 .projectPreviewContainer > .imageContainer {
   display: flex;
-  width: 50%;
 }
 
 .projectPreviewContainer[aria-label="reverse"] > .imageContainer {
@@ -71,4 +73,9 @@
   font-weight: 300;
   margin-top: 12px;
   line-height: 40px;
+}
+
+.projectPreviewContainer > .imageContainer > .circle > img {
+  width: 50%;
+  border-radius: 14%;
 }
