@@ -10,7 +10,9 @@ export const Button = props => {
         props.color ? styles.btnContainerLight : styles.btnContainerDark
       }
     >
-      Get a Free Quote
+      <a className={styles.text} href="/contact">
+        Get a Free Quote
+      </a>
       <img className={styles.img} src={props.color ? iconDark : iconLight} />
     </div>
   );

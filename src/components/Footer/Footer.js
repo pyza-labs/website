@@ -11,18 +11,22 @@ export const Footer = () => {
         <div className={styles.openSource}>
           <div>OPEN SOURCE</div>
           <div className={styles.contentText}>
-            <div>Github</div>
+            <a target="_blank" href="https://github.com/pyza-labs">
+              Github
+            </a>
           </div>
         </div>
         <div className={styles.openSource}>
           <div>HIRE DEVELOPERS</div>
           <div className={styles.contentText}>
-            <div>Node Developers</div>
-            <div>React Developers</div>
-            <div>React Native Developers</div>
-            <div>iOS Developers</div>
-            <div>Android Developers</div>
-            <div>Full Stack Developers</div>
+            <a href="/contact">
+              <div>Node Developers</div>
+              <div>React Developers</div>
+              <div>React Native Developers</div>
+              <div>iOS Developers</div>
+              <div>Android Developers</div>
+              <div>Full Stack Developers</div>
+            </a>
           </div>
         </div>
         <div className={styles.openSource}>
@@ -32,18 +36,20 @@ export const Footer = () => {
             </div>
           </div>
           <div className={styles.contentText}>
-            <div>Translation & Transcription</div>
-            <div>Subtitling</div>
-            <div>Content Writing</div>
-            <div>Creative Writing</div>
-            <div>Ghostwriting</div>
-            <div>Fiction Writing</div>
-            <div>Data Entry</div>
-            <div>
-              Language Experts-Hindi
-              <br />
-              English
-            </div>
+            <a href="/contact">
+              <div>Translation & Transcription</div>
+              <div>Subtitling</div>
+              <div>Content Writing</div>
+              <div>Creative Writing</div>
+              <div>Ghostwriting</div>
+              <div>Fiction Writing</div>
+              <div>Data Entry</div>
+              <div>
+                Language Experts-Hindi
+                <br />
+                English
+              </div>
+            </a>
           </div>
         </div>
         <div className={styles.openSourceSocial}>
@@ -52,9 +58,21 @@ export const Footer = () => {
             <div className={styles.social}>Social</div>
           </div>
           <div className={styles.socialText}>
-            <div>Instagram</div>
-            <div>Facebook</div>
-            <div>Medium</div>
+            <div className={styles.instagram}>
+              <a target="_blank" href="https://www.instagram.com/pyzalabs">
+                Instagram
+              </a>
+            </div>
+            <div className={styles.facebook}>
+              <a target="_blank" href="https://www.facebook.com/pyzalabs">
+                Facebook
+              </a>
+            </div>
+            <div className={styles.medium}>
+              <a target="_blank" href="https://medium.com/@pyzalabs">
+                Medium
+              </a>
+            </div>
           </div>
           <div className={styles.address}>
             <div>Our Office</div>

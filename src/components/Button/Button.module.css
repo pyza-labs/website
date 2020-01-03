@@ -34,3 +34,8 @@
   color: #fff;
   cursor: pointer;
 }
+
+.text {
+  text-decoration: none;
+  color: unset;
+}
