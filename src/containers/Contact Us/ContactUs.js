@@ -1,8 +1,6 @@
 import React from "react";
-import styles from "./ContactUs.module.css";
-import asterisk from "../../assets/asterisk.svg";
-import { Button } from "../../components/Button/Button";
 import avatar from "../../assets/avatar.png";
+import styles from "./ContactUs.module.css";
 
 export const ContactUs = () => {
   return (
@@ -20,8 +18,8 @@ export const ContactUs = () => {
         </div>
         <div className={styles.clientName}>
           Rishabh Singh
-          <div className={styles.clientDesignation}>CEO & Founder@Gradly</div>
         </div>
+        <div className={styles.clientDesignation}>CEO & Founder@Gradly</div>
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.headingRight}>Let's have a talk</div>
@@ -34,37 +32,20 @@ export const ContactUs = () => {
         <form className={styles.formContainer}>
           <div className={styles.formSubContainer}>
             <div className={styles.subContainerLeft}>
-              <div className={styles.name}>
-                Your Name <img src={asterisk} />
-              </div>
-              <input className={styles.nameInput} />
-              <div className={styles.phoneNumber}>
-                Phone Number <img src={asterisk} />
-              </div>
-              <input className={styles.phoneNumberInput} />
+              <input required name="name" placeholder="Your Name*" className={[styles.nameInput]} />
+              <input required name="phone" placeholder="Phone Number*" className={styles.phoneNumberInput} />
             </div>
             <div className={styles.subContainerRight}>
-              <div className={styles.emailAddress}>
-                Email Address <img src={asterisk} />
-              </div>
-              <input className={styles.emailAddressInput} />
-              <div className={styles.budgetRange}>
-                Budget Range <img src={asterisk} />
-              </div>
-              <input className={styles.budgetRangeInput} />
+              <input required name="email" type="email" placeholder="Email Address*" className={styles.emailAddressInput} />
+              <input required name="budget" placeholder="Budget Range*" className={styles.budgetRangeInput} />
             </div>
           </div>
           <div className={styles.bottomContainer}>
-            <div className={styles.project}>
-              Describe your Project <img src={asterisk} />
-            </div>
-            <input className={styles.projectInput} />
+            <input name="projectDescription" required placeholder="Describe your project*" className={styles.projectInput} />
             <div className={styles.submitContainer}>
-              <input type="checkbox" className={styles.checkBox} />
+              <input required name="robot" type="checkbox" className={styles.checkBox} />
               <div className={styles.checkBoxText}>Yeah, i'm not a robot</div>
-              <div className={styles.button}>
-                <Button />
-              </div>
+              <input type="submit" value="Send Message" className={styles.button}/>
             </div>
           </div>
         </form>

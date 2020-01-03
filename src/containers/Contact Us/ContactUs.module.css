@@ -2,19 +2,21 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 70px;
 }
 
 .leftContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 0.4;
+  align-items: flex-start;
+  width: 40%;
   margin-right: 140px;
   margin-bottom: 140px;
-  height: 50vh;
+  height: 90vh;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
   max-width: 500px;
-  padding-top: 240px;
-  padding-bottom: 128px;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: left;
   border-radius: 0 0 32px 0;
@@ -50,10 +52,11 @@
 .rightContainer {
   display: flex;
   flex-direction: column;
-  flex: 0.6;
+  width: 50%;
+  padding-right: 10%;
   text-align: left;
   margin-left: auto;
-  margin-top: 64px;
+  margin-right: auto;
 }
 
 .headingRight {
@@ -74,109 +77,68 @@
   flex-direction: column;
   margin-top: 48px;
   margin-bottom: 48px;
-  line-height: 1.6;
+  width: 100%;
 }
 
 .formContainer > .formSubContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: stretch;
 }
 
 .subContainerLeft {
-  margin-right: 48px;
-}
-
-.subContainerLeft > .name {
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  opacity: 0.5;
-}
-
-.subContainerLeft > .name > img {
-  width: 5px;
-  margin-left: 4px;
-  margin-bottom: 12px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 16px);
 }
 
 .subContainerLeft > .nameInput {
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 56px;
   outline: none;
-  width: 70%;
-  min-width: 200px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.subContainerLeft > .phoneNumber {
+.subContainerLeft > .phoneNumberInput {
   font-size: 22px;
   font-weight: 300;
-  letter-spacing: -1px;
-  opacity: 0.5;
-  margin-top: 48px;
-}
-
-.subContainerLeft > .phoneNumber > img {
-  width: 5px;
-  margin-left: 4px;
-  margin-bottom: 12px;
-}
-
-.subContainerLeft > .phoneNumberInput {
+  line-height: 56px;
+  margin-top: 32px;
   text-decoration: none;
   outline: none;
-  min-width: 200px;
-  width: 70%;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .subContainerRight {
-  margin-right: auto;
-}
-
-.subContainerRight > .emailAddress {
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  opacity: 0.5;
-}
-
-.subContainerRight > .emailAddress > img {
-  width: 5px;
-  margin-left: 4px;
-  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 32px;
+  width: calc(50% - 16px);
 }
 
 .subContainerRight > .emailAddressInput {
   text-decoration: none;
-  width: 70%;
-  min-width: 200px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 56px;
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.subContainerRight > .budgetRange {
+.subContainerRight > .budgetRangeInput {
   font-size: 22px;
   font-weight: 300;
-  letter-spacing: -1px;
-  opacity: 0.5;
-  margin-top: 48px;
-}
-
-.subContainerRight > .budgetRange > img {
-  width: 5px;
-  margin-left: 4px;
-  margin-bottom: 12px;
-}
-
-.subContainerRight > .budgetRangeInput {
+  line-height: 56px;
+  margin-top: 32px;
   text-decoration: none;
-  min-width: 200px;
-  width: 70%;
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -187,28 +149,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 48px;
-}
-
-.bottomContainer > .project {
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  opacity: 0.5;
-}
-
-.bottomContainer > .project > img {
-  width: 5px;
-  margin-left: 4px;
-  margin-bottom: 12px;
 }
 
 .bottomContainer > .projectInput {
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-top: 24px;
   outline: none;
-  min-width: 450px;
+  width: 100%;
   border: none;
-  line-height: 1.6;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -242,5 +193,11 @@
 }
 
 .submitContainer > .button {
-  margin-left: 64px;
+  margin-left: auto;
+  padding: 20px 42px;
+  background-color: rgba(0, 90, 270, 1);
+  color: white;
+  border-radius: 32px;
+  font-size: 16px;
+  cursor: pointer;
 }
