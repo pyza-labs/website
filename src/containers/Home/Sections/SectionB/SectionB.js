@@ -1,9 +1,9 @@
 import React from "react";
+import futbol from "../../../../assets/futbol-connect.png";
 import futbolConnectLogo from "../../../../assets/futbol-connectLogo.png";
+import gradly from "../../../../assets/gradly.png";
 import gradlyLogo from "../../../../assets/gradlyLogo.svg";
 import styles from "./SectionB.module.css";
-import futbol from "../../../../assets/futbol-connect.png";
-import gradly from "../../../../assets/gradly.png";
 
 const ProjectPreview = props => {
   return (
@@ -51,7 +51,7 @@ export const SectionB = () => {
         logo={gradlyLogo}
         description={
           <div>
-            One stop portal for your <br /> masters abroad.
+            One stop portal for your <br /> education abroad.
           </div>
         }
       />
