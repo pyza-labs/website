@@ -29,7 +29,7 @@ export const ContactUs = () => {
           we'll get back to you in 24 hours.
         </div>
 
-        <form className={styles.formContainer}>
+        <form method="POST" action="https://formsubmit.co/1fedb305b79e2d91291f21386a655ef4" className={styles.formContainer}>
           <div className={styles.formSubContainer}>
             <div className={styles.subContainerLeft}>
               <input required name="name" placeholder="Your Name*" className={[styles.nameInput]} />
