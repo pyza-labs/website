@@ -9,40 +9,30 @@ import styles from "./SectionF.module.css";
 export const SectionF = () => {
   return (
     <div className={styles.sectionFContainer}>
-      <div className={styles.title}>
-        Our process is here to help<br></br>your business grow
-      </div>
-      <div id="process" className={styles.imgContainer}>
-        <img className={styles.research} src={research} />
-        <img className={styles.linea} src={line} />
-        <img className={styles.design} src={design} />
-        <img className={styles.lineb} src={line} />
-        <img className={styles.build} src={build} />
-      </div>
-      <div className={styles.contentContainer}>
-        <div className={styles.titlea}>
-          Research
+      <div className={styles.imageTextContainer}>
+        <div className={styles.leftContainer}>
+          <img alt="" src={research}></img>
+          <div className={styles.title}>Research</div>
           <div className={styles.contentText}>
-            You develop your idea we help you<br></br>expand it and together we
-            will come up with<br></br>a unique selling proposition to help you
-            <br></br>stand out.
+            You develop your idea we help you expand and together we will come
+            up with a unique selling propositon to help you stand out.
           </div>
         </div>
-        <div className={styles.titleb}>
-          Design
+        <div className={styles.centerContainer}>
+          <img alt="" src={design}></img>
+          <div className={styles.title}>Build</div>
           <div className={styles.contentText}>
-            Simplicity is the ultimate sophistication.<br></br>Work with our
-            design team to create an<br></br>elegant design that incorporates
-            the latest UI<br></br>and UX trends.
+            Simplicity is the ultimate sophistication. Work with our design team
+            to create an elegant design that incorporates the latest UI and UX
+            trends.
           </div>
         </div>
-        <div className={styles.titlec}>
-          Build
+        <div className={styles.rightContainer}>
+          <img alt="" src={build}></img>
+          <div className={styles.title}>Design</div>
           <div className={styles.contentText}>
-            Deadlines are important to us. Our agile<br></br>development cycle
-            has clear milestones to<br></br>ensure development happens on a
-            timely
-            <br></br>basis.
+            Deadlines are important to us. Our agile development cycle has clear
+            milestones to ensure development happens on a timely basis.
           </div>
         </div>
       </div>
@@ -50,7 +40,7 @@ export const SectionF = () => {
       <div className={styles.endText}>
         How do we successfully transform an idea into a functioning product?
       </div>
-      <Button/>
+      <Button />
     </div>
   );
 };

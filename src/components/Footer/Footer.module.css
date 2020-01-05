@@ -1,3 +1,5 @@
+/* Default CSS */
+
 .footerContainer {
   display: flex;
   justify-content: center;
@@ -7,7 +9,7 @@
   color: #ffffff;
 }
 
-.logo {
+.logo > img {
   min-width: 100px;
   width: 20%;
   max-width: 200px;
@@ -133,4 +135,48 @@
   font-weight: 300;
   background-color: rgba(0, 0, 0, 0.7);
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+  .footerContainer > .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footerContainer > .logo > img {
+    max-width: unset;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footerContainer > .openSource {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  .footerContainer > .openSource > .contentText {
+    text-align: center;
+  }
+
+  .footerContainer > .openSourceSocial {
+    align-items: center;
+  }
+  .footerContainer > .openSourceSocial > .connectContent {
+    display: flex;
+  }
+  .socialContainer {
+    margin-right: auto;
+    flex: 0.7;
+  }
+  .addressContainer {
+    margin-left: auto;
+    flex: 0.3;
+  }
 }

@@ -1,3 +1,5 @@
+/* Default CSS */
+
 .container {
   position: fixed;
   display: flex;
@@ -6,7 +8,6 @@
   padding: 16px 32px;
   height: 40px;
   width: calc(100% - 64px);
-  min-width: 400px;
   color: #fff;
   background-color: rgba(103, 0, 255, 0.5);
   transition: all 0.3s;
@@ -46,7 +47,7 @@
 }
 
 .container[aria-label="dark"] a:hover {
-  color: #DA451A;
+  color: #da451a;
 }
 
 .work {
@@ -101,4 +102,45 @@
   height: 16px;
   width: 16px;
   margin-left: 8px;
+}
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .container {
+    padding: 4px 8px;
+    width: calc(100% - 16px);
+  }
+  .container > .work {
+    display: none;
+  }
+  .container > .process {
+    display: none;
+  }
+  .container > .services {
+    display: none;
+  }
+  .container > .logo > a > img {
+    margin-right: auto;
+    width: 80px;
+  }
+  .container > .quote {
+    padding: 4px 8px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container > .quote > a > .quoteButton {
+    font-size: 14px;
+  }
+  .container > .quote > a > .quoteButton > img {
+    margin-left: 4px;
+    width: 12px;
+  }
+  .container > .aboutUs {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .container > .aboutUs > a {
+    font-size: 14px;
+  }
 }

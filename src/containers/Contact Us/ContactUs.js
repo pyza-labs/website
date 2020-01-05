@@ -23,7 +23,6 @@ export const ContactUs = () => {
         <div className={styles.headingRight}>Let's have a talk</div>
         <div className={styles.subHeadingRight}>
           We'd love to hear what you are working on. Drop us a note here and
-          <br />
           we'll get back to you in 24 hours.
         </div>
 

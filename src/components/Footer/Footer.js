@@ -6,8 +6,9 @@ export const Footer = () => {
   return (
     <div>
       <div className={styles.footerContainer}>
-        <img alt="Logo" className={styles.logo} src={logo} />
-        <div></div>
+        <div className={styles.logo}>
+          <img alt="Logo" src={logo} />
+        </div>
         <div className={styles.openSource}>
           <div>OPEN SOURCE</div>
           <div className={styles.contentText}>
@@ -53,34 +54,38 @@ export const Footer = () => {
           </div>
         </div>
         <div className={styles.openSourceSocial}>
-          <div>
-            <div>CONNECT</div>
-            <div className={styles.social}>Social</div>
-          </div>
-          <div className={styles.socialText}>
-            <div className={styles.instagram}>
-              <a target="_blank" href="https://www.instagram.com/pyzalabs">
-                Instagram
-              </a>
+          <div className={styles.connect}>CONNECT</div>
+          <div className={styles.connectContent}>
+            <div className={styles.socialContainer}>
+              <div className={styles.social}>Social</div>
+              <div className={styles.socialText}>
+                <div className={styles.instagram}>
+                  <a target="_blank" href="https://www.instagram.com/pyzalabs">
+                    Instagram
+                  </a>
+                </div>
+                <div className={styles.facebook}>
+                  <a target="_blank" href="https://www.facebook.com/pyzalabs">
+                    Facebook
+                  </a>
+                </div>
+                <div className={styles.medium}>
+                  <a target="_blank" href="https://medium.com/@pyzalabs">
+                    Medium
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className={styles.facebook}>
-              <a target="_blank" href="https://www.facebook.com/pyzalabs">
-                Facebook
-              </a>
+            <div className={styles.addressContainer}>
+              <div className={styles.address}>
+                <div>Our Office</div>
+                <div>Indira Nagar, Bengaluru, India</div>
+              </div>
+              <div className={styles.address}>
+                <div>Hire Us!</div>
+                <a href="mailto:info@pyzalabs.com">info@pyzalabs.com</a>
+              </div>
             </div>
-            <div className={styles.medium}>
-              <a target="_blank" href="https://medium.com/@pyzalabs">
-                Medium
-              </a>
-            </div>
-          </div>
-          <div className={styles.address}>
-            <div>Our Office</div>
-            <div>Indira Nagar, Bengaluru, India</div>
-          </div>
-          <div className={styles.address}>
-            <div>Hire Us!</div>
-            <a href="mailto:info@pyzalabs.com">info@pyzalabs.com</a>
           </div>
         </div>
       </div>
