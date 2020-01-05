@@ -1,88 +1,39 @@
-/* Default CSS */
-
 .container {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
-  height: 40px;
-  width: calc(100% - 64px);
   color: #fff;
-  background-color: rgba(103, 0, 255, 0.5);
-  transition: all 0.3s;
-  z-index: 100;
+  background-color: rgba(103, 0, 255, 0.7);
 }
 
 .container[aria-label="dark"] {
   background-color: #121212;
 }
 
-.logo img {
+.logo {
   display: block;
-  margin-right: 80px;
   width: 100px;
-}
-
-.logo a,
-.work a,
-.quote a,
-.aboutUs a,
-.services a,
-.process a {
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-  opacity: 0.7;
-}
-
-.work a:hover,
-.quote a:hover,
-.aboutUs a:hover,
-.process a:hover,
-.services a:hover {
-  color: white;
-  opacity: 1;
-  text-shadow: 1px 0.5px rgba(113, 146, 255, 0.2);
 }
 
 .container[aria-label="dark"] a:hover {
   color: #da451a;
 }
 
-.work {
-  margin-right: 20px;
-  padding: 4px 8px;
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-.process {
-  margin-right: 20px;
-  padding: 4px 8px;
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
-.services {
-  margin-right: 20px;
-  padding: 4px 8px;
-  font-size: 14px;
-  font-weight: 500;
-  opacity: 0.8;
-}
-
 .quote {
-  display: flex;
   align-items: center;
-  margin-left: auto;
-  padding: 4px 8px;
-  margin-right: 40px;
-  font-size: 14px;
   font-weight: 500;
-  opacity: 0.8;
+}
+
+.quote a {
+  color: white;
+}
+
+.quote img {
+  height: 16px;
+  width: 16px;
+  margin-left: 8px;
+  opacity: 0.6;
+}
+
+.quote:hover img {
+  opacity: 1;
 }
 
 .quoteButton {
@@ -98,49 +49,6 @@
   opacity: 0.8;
 }
 
-.quote img {
-  height: 16px;
-  width: 16px;
-  margin-left: 8px;
-}
-
-/* Mobile View CSS */
-
-@media (max-width: 450px) {
-  .container {
-    padding: 4px 8px;
-    width: calc(100% - 16px);
-  }
-  .container > .work {
-    display: none;
-  }
-  .container > .process {
-    display: none;
-  }
-  .container > .services {
-    display: none;
-  }
-  .container > .logo > a > img {
-    margin-right: auto;
-    width: 80px;
-  }
-  .container > .quote {
-    padding: 4px 8px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container > .quote > a > .quoteButton {
-    font-size: 14px;
-  }
-  .container > .quote > a > .quoteButton > img {
-    margin-left: 4px;
-    width: 12px;
-  }
-  .container > .aboutUs {
-    margin-left: auto;
-    margin-right: 20px;
-  }
-  .container > .aboutUs > a {
-    font-size: 14px;
-  }
+.aboutUs a {
+  color: white;
 }
