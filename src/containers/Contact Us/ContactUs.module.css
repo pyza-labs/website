@@ -179,6 +179,11 @@
   border-radius: 2px;
   margin-right: 16px;
   outline: none;
+  cursor: pointer;
+}
+
+.checkBox:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .checkBox:checked {
@@ -200,4 +205,5 @@
   border-radius: 32px;
   font-size: 16px;
   cursor: pointer;
+  border: none;
 }

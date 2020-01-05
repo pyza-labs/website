@@ -16,9 +16,7 @@ export const ContactUs = () => {
           <br />
           with the new relaunch."
         </div>
-        <div className={styles.clientName}>
-          Rishabh Singh
-        </div>
+        <div className={styles.clientName}>Rishabh Singh</div>
         <div className={styles.clientDesignation}>CEO & Founder@Gradly</div>
       </div>
       <div className={styles.rightContainer}>
@@ -32,20 +30,55 @@ export const ContactUs = () => {
         <form className={styles.formContainer}>
           <div className={styles.formSubContainer}>
             <div className={styles.subContainerLeft}>
-              <input required name="name" placeholder="Your Name*" className={[styles.nameInput]} />
-              <input required name="phone" placeholder="Phone Number*" className={styles.phoneNumberInput} />
+              <input
+                required
+                name="name"
+                placeholder="Your Name*"
+                className={[styles.nameInput]}
+              />
+              <input
+                required
+                name="phone"
+                placeholder="Phone Number*"
+                className={styles.phoneNumberInput}
+              />
             </div>
             <div className={styles.subContainerRight}>
-              <input required name="email" type="email" placeholder="Email Address*" className={styles.emailAddressInput} />
-              <input required name="budget" placeholder="Budget Range*" className={styles.budgetRangeInput} />
+              <input
+                required
+                name="email"
+                type="email"
+                placeholder="Email Address*"
+                className={styles.emailAddressInput}
+              />
+              <input
+                required
+                name="budget"
+                placeholder="Budget Range*"
+                className={styles.budgetRangeInput}
+              />
             </div>
           </div>
           <div className={styles.bottomContainer}>
-            <input name="projectDescription" required placeholder="Describe your project*" className={styles.projectInput} />
+            <input
+              name="projectDescription"
+              required
+              placeholder="Describe your project*"
+              className={styles.projectInput}
+            />
             <div className={styles.submitContainer}>
-              <input required name="robot" type="checkbox" className={styles.checkBox} />
+              <input
+                required
+                name="robot"
+                type="checkbox"
+                className={styles.checkBox}
+              />
               <div className={styles.checkBoxText}>Yeah, i'm not a robot</div>
-              <input type="submit" value="Send Message" className={styles.button}/>
+              <input
+                type="submit"
+                value="Send Message"
+                className={styles.button}
+              />
             </div>
           </div>
         </form>
