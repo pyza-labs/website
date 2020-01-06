@@ -38,3 +38,18 @@
   letter-spacing: 0.4px;
   opacity: 0.8;
 }
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .sectionC {
+    flex-direction: column;
+  }
+  .sectionC > .textLeft {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .sectionC > .rightTextContainer > .rightText {
+    text-align: justify;
+  }
+}

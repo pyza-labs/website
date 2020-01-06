@@ -5,7 +5,6 @@
   height: 70vh;
   padding: 0 128px;
   margin: 68px 0;
-  flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.02);
 }
 
@@ -22,4 +21,34 @@
 
 .sectionBC :last-child {
   margin-bottom: -200px;
+}
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .sectionBC > :first-child {
+    margin-top: unset;
+  }
+  .sectionBC {
+    flex-direction: column;
+  }
+  .sectionBC > img {
+    min-height: 140px;
+    height: 20%;
+    width: unset;
+    max-width: unset;
+    min-width: unset;
+  }
+  .sectionBC > :last-child {
+    margin-bottom: unset;
+  }
+  .sectionBC > :nth-child(2) {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 770px) and (min-width: 700px) {
+  .sectionBC {
+    flex-wrap: nowrap;
+  }
 }

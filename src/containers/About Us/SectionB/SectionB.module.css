@@ -21,3 +21,17 @@
   letter-spacing: 0.5px;
   opacity: 0.8;
 }
+
+/* MObile View CSS */
+
+@media (max-width: 450px) {
+  .sectionB > .title {
+    font-size: 34px;
+    text-align: center;
+  }
+  .sectionB > .content {
+    font-size: 24px;
+    letter-spacing: unset;
+    text-align: center;
+  }
+}

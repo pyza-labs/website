@@ -17,17 +17,7 @@ export const Navbar = props => {
   const [expanded = false, setExpanded] = useState();
 
   return (
-<<<<<<< HEAD
-    <NavbarB
-      className={Styles.container}
-      aria-label={props.dark ? "dark" : "light"}
-      dark
-      expand="lg"
-      fixed="top"
-    >
-=======
     <NavbarB className={Styles.container} aria-label={props.dark ? 'dark' : 'light'} dark expand="md" fixed="top">
->>>>>>> 1a549b2fcb0f3227cba50ce0d61c5be0e036c6d7
       <NavbarBrand>
         <Link className="navbar-brand" to="/">
           <img
@@ -40,22 +30,6 @@ export const Navbar = props => {
       <NavbarToggler onClick={() => setExpanded(!expanded)} />
       <Collapse isOpen={expanded} navbar>
         <Nav className="mr-auto" navbar>
-<<<<<<< HEAD
-          <NavItem>
-            <Link className="nav-link" to="#work">
-              Work
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to="#process">
-              Process
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to="#services">
-              Services
-            </Link>
-=======
           <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="#work">Work</Link>
           </NavItem>
@@ -64,7 +38,6 @@ export const Navbar = props => {
           </NavItem>
           <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="#services">Services</Link>
->>>>>>> 1a549b2fcb0f3227cba50ce0d61c5be0e036c6d7
           </NavItem>
         </Nav>
         <Nav navbar>
@@ -76,15 +49,8 @@ export const Navbar = props => {
               </div>
             </Link>
           </NavItem>
-<<<<<<< HEAD
-          <NavItem>
-            <Link className="nav-link" to="about">
-              About Us
-            </Link>
-=======
           <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="about">About Us</Link>
->>>>>>> 1a549b2fcb0f3227cba50ce0d61c5be0e036c6d7
           </NavItem>
         </Nav>
       </Collapse>

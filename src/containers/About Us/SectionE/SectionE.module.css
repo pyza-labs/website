@@ -16,7 +16,6 @@
 
 .sectionE > .images > img {
   width: 20%;
-  flex-wrap: wrap;
   margin: 4px;
   padding: 4px;
   min-width: 200px;
@@ -48,4 +47,27 @@
   line-height: 1.6;
   text-align: center;
   padding: 16px;
+}
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .sectionE {
+    margin: 0 5vw;
+  }
+  .sectionE > .images > img {
+    min-width: 100px;
+  }
+  .sectionE > .images > :first-child {
+    margin-bottom: unset;
+  }
+  .sectionE > .images > :nth-child(2) {
+    margin-top: unset;
+  }
+  .sectionE > .images > :last-child {
+    margin-bottom: unset;
+  }
+  .sectionE > .title {
+    padding: 4px;
+  }
 }

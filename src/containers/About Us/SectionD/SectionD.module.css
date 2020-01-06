@@ -35,3 +35,15 @@
   letter-spacing: 0.4px;
   flex: 0.7;
 }
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .sectionD > .topContainer {
+    flex-direction: column;
+  }
+  .sectionD > .topContainer > .leftText {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}

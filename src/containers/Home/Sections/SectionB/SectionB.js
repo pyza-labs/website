@@ -33,19 +33,12 @@ const ProjectPreview = props => {
 
 export const SectionB = () => {
   return (
-<<<<<<< HEAD
-    <div className={styles.container}>
-      <div id="work" className={styles.title}>
-        Clients come to us with a<br></br>vision. We help them build it.
-      </div>
-=======
     <Container fluid>
       <Row>
         <Col className={styles.title} lg={{ size: 8, offset: 2 }} md={{ size: 10, offset: 1 }}>
           Clients come to us with a<br></br>vision. We help them build it.
         </Col>
       </Row>
->>>>>>> 1a549b2fcb0f3227cba50ce0d61c5be0e036c6d7
       <ProjectPreview
         imageSrc={futbolConnectMockup}
         name="FutbolConnect"
