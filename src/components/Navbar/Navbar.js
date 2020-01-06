@@ -20,18 +20,18 @@ export const Navbar = props => {
       <NavbarToggler onClick={() => setExpanded(!expanded)} />
       <Collapse isOpen={expanded} navbar>
         <Nav className="mr-auto" navbar>
-          <NavItem>
+          <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="#work">Work</Link>
           </NavItem>
-          <NavItem>
+          <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="#process">Process</Link>
           </NavItem>
-          <NavItem>
+          <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="#services">Services</Link>
           </NavItem>
         </Nav>
         <Nav navbar>
-          <NavItem className={Styles.quote}>
+          <NavItem onClick={() => setExpanded(false)} className={Styles.quote}>
             <Link className="nav-link" to="contact">
               <div className={Styles.quoteButton}>
                 Ask for a Free Quote!
@@ -39,7 +39,7 @@ export const Navbar = props => {
               </div>
             </Link>
           </NavItem>
-          <NavItem>
+          <NavItem onClick={() => setExpanded(false)}>
             <Link className="nav-link" to="about">About Us</Link>
           </NavItem>
         </Nav>
