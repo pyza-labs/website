@@ -1,27 +1,13 @@
-.sectionDContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  text-align: center;
   margin-top: 180px;
   margin-bottom: 140px;
 }
 
-.image img {
+.avatar {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-}
-
-.image {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 1px;
-  width: 80vh;
-  background-color: rgba(0, 0, 0, 0.05);
-  margin: 0 0 48px 0;
 }
 
 .text {

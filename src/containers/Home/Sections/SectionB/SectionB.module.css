@@ -1,81 +1,51 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 .title {
   font-size: 48px;
   font-weight: 500;
   text-align: left;
-  width: 50%;
-  align-self: center;
   margin-top: 120px;
-  margin-bottom: 80px;
   line-height: 56px;
+  align-items: center;
 }
 
 .projectPreviewContainer {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  margin: 64px 10vw;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .projectPreviewContainer[aria-label="reverse"] {
   flex-direction: row-reverse;
 }
 
-.projectPreviewContainer > .imageContainer > .circle {
+.projectPreviewContainer .imageContainer .circle {
   height: 50vh;
   width: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   background: linear-gradient(45deg, #ff3232, #f7e6a7);
 }
 
-.projectPreviewContainer > .imageContainer {
-  display: flex;
-}
-
-.projectPreviewContainer[aria-label="reverse"] > .imageContainer {
-  justify-content: flex-end;
-  margin-left: inherit;
-}
-
-.projectPreviewContainer > .descriptionContainer {
-  margin-left: 64px;
-}
-
-.projectPreviewContainer > .descriptionContainer > img {
+.projectPreviewContainer .descriptionContainer img {
   height: 68px;
 }
 
-.projectPreviewContainer > .descriptionContainer > .companyName {
+.projectPreviewContainer .descriptionContainer .companyName {
   font-size: 30px;
   margin-top: 24px;
   display: flex;
   align-items: center;
 }
 
-.projectPreviewContainer > .descriptionContainer > .companyName > .line {
+.projectPreviewContainer .descriptionContainer .companyName .line {
   height: 3px;
   margin-left: 8px;
   width: 32px;
   background-color: #212121;
 }
 
-.projectPreviewContainer > .descriptionContainer > .description {
+.projectPreviewContainer .descriptionContainer .description {
   font-size: 30px;
   opacity: 0.8;
   font-weight: 300;
   margin-top: 12px;
   line-height: 40px;
-}
-
-.projectPreviewContainer > .imageContainer > .circle > img {
-  width: 50%;
-  border-radius: 14%;
 }

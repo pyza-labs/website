@@ -11,7 +11,7 @@ export const Navbar = props => {
   const [expanded = false, setExpanded] = useState();
 
   return (
-    <NavbarB className={Styles.container} aria-label={props.dark ? 'dark' : 'light'} dark expand="lg" fixed="top">
+    <NavbarB className={Styles.container} aria-label={props.dark ? 'dark' : 'light'} dark expand="md" fixed="top">
       <NavbarBrand>
         <Link className="navbar-brand" to="/">
           <img className={Styles.logo} alt="logo" src={props.dark ? pyzaLogoOrange : pyzaLogo} />

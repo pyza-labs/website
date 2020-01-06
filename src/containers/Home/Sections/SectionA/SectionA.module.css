@@ -1,8 +1,5 @@
-.sectionAContainer {
-  padding: 52px 52px 0 52px;
+.container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 80vh;
   background-image: radial-gradient(
     farthest-corner at 0% 0%,
@@ -24,13 +21,4 @@
   margin-top: 24px;
   margin-bottom: 24px;
   color: white;
-}
-
-.circle {
-  width: 90vh;
-  height: 90vh;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
