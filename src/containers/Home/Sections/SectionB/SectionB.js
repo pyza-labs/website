@@ -31,7 +31,7 @@ const ProjectPreview = props => {
 export const SectionB = () => {
   return (
     <div className={styles.container}>
-      <div id="work" className={styles.title}> 
+      <div id="work" className={styles.title}>
         Clients come to us with a<br></br>vision. We help them build it.
       </div>
       <ProjectPreview
