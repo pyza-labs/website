@@ -12,7 +12,7 @@ export const SectionD = () => {
           <img className={Styles.avatar} alt="avatar" src={avatar} />
         </Col>
         <div className="w-100" />
-        <Col className={["ml-auto", Styles.text].join(' ')}>
+        <Col lg="6" md="8" className={["ml-auto mr-auto", Styles.text].join(' ')}>
           "We are grateful to have PyzaLabs as our go to agency"
         </Col>
         <div className="w-100" />
