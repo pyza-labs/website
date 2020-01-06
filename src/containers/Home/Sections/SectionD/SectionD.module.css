@@ -1,18 +1,16 @@
-.sectionDContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  text-align: center;
   margin-top: 180px;
   margin-bottom: 140px;
 }
 
-.image img {
+.avatar {
   height: 60px;
   width: 60px;
   border-radius: 50%;
 }
 
+<<<<<<< HEAD
 .image {
   display: flex;
   flex-direction: row;
@@ -24,6 +22,8 @@
   margin: 0 0 48px 0;
 }
 
+=======
+>>>>>>> 1a549b2fcb0f3227cba50ce0d61c5be0e036c6d7
 .text {
   margin-top: 8px;
   margin-bottom: 32px;

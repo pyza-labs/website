@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Button.module.css";
 import iconDark from "../../assets/black.svg";
 import iconLight from "../../assets/white.svg";
+import styles from "./Button.module.css";
 
 export const Button = props => {
   return (

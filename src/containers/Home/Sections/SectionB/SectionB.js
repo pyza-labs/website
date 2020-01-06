@@ -1,41 +1,53 @@
 import React from "react";
-import futbol from "../../../../assets/futbol-connect.png";
+import { Col, Container, Row } from "reactstrap";
 import futbolConnectLogo from "../../../../assets/futbol-connectLogo.png";
-import gradly from "../../../../assets/gradly.png";
+import futbolConnectMockup from "../../../../assets/FutbolConnectMockup.png";
 import gradlyLogo from "../../../../assets/gradlyLogo.svg";
 import styles from "./SectionB.module.css";
 
 const ProjectPreview = props => {
   return (
-    <div
-      aria-label={props.reverse ? "reverse" : "plain"}
-      className={styles.projectPreviewContainer}
-    >
-      <div className={styles.imageContainer}>
-        <div className={styles.circle}>
-          <img src={props.imageSrc} />
-        </div>
-      </div>
-      <div className={styles.descriptionContainer}>
-        <img alt="logo" src={props.logo} />
-        <div className={styles.companyName}>
-          <div>{props.name}</div>
-          <div className={styles.line}></div>
-        </div>
-        <div className={styles.description}>{props.description}</div>
-      </div>
-    </div>
+    <Row className={styles.projectPreviewContainer}>
+      <Col sm={{ size: 6, offset: 3 }} md={{ size: 4, offset: 1, order: props.reverse ? 2 : 1 }}>
+        <img width="100%" alt="preview" src={props.imageSrc} />
+      </Col>
+      <Col sm={{ size: 6, offset: 3 }} md={{ size: 4, offset: 1, order: props.reverse ? 1 : 2 }}>
+        <Container className={styles.descriptionContainer}>
+          <Row>
+            <img alt="logo" src={props.logo} />
+          </Row>
+          <Row>
+            <div className={styles.companyName}>
+              <div>{props.name}</div>
+              <div className={styles.line}></div>
+            </div>
+          </Row>
+          <Row>
+            <div className={styles.description}>{props.description}</div>
+          </Row>
+        </Container>
+      </Col>
+    </Row>
   );
 };
 
 export const SectionB = () => {
   return (
+<<<<<<< HEAD
     <div className={styles.container}>
       <div id="work" className={styles.title}>
         Clients come to us with a<br></br>vision. We help them build it.
       </div>
+=======
+    <Container fluid>
+      <Row>
+        <Col className={styles.title} lg={{ size: 8, offset: 2 }} md={{ size: 10, offset: 1 }}>
+          Clients come to us with a<br></br>vision. We help them build it.
+        </Col>
+      </Row>
+>>>>>>> 1a549b2fcb0f3227cba50ce0d61c5be0e036c6d7
       <ProjectPreview
-        imageSrc={futbol}
+        imageSrc={futbolConnectMockup}
         name="FutbolConnect"
         logo={futbolConnectLogo}
         description={
@@ -46,7 +58,7 @@ export const SectionB = () => {
       />
       <ProjectPreview
         reverse
-        imageSrc={gradly}
+        imageSrc={futbolConnectMockup}
         name="Gradly"
         logo={gradlyLogo}
         description={
@@ -55,6 +67,6 @@ export const SectionB = () => {
           </div>
         }
       />
-    </div>
+    </Container>
   );
 };
