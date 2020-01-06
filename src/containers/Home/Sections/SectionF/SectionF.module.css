@@ -79,6 +79,7 @@
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 @media (max-width: 770px) {
@@ -86,10 +87,10 @@
     flex-wrap: wrap;
   }
   .title {
-    font-size: 14px;
+    font-size: 16px;
   }
   .contentText {
-    font-size: 12px;
+    font-size: 14px;
   }
   .sectionFContainer > .imageTextContainer > .centerContainer > img {
     margin-top: 40px;

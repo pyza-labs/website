@@ -1,6 +1,6 @@
 .container {
   color: #fff;
-  background-color: rgba(103, 0, 255, 0.7);
+  background-color: rgba(103, 0, 255, 0.6);
 }
 
 .container[aria-label="dark"] {
