@@ -4,6 +4,7 @@ import { SectionB } from "./Sections/SectionB";
 import { SectionD } from "./Sections/SectionD";
 import { SectionE } from "./Sections/SectionE";
 import { SectionF } from "./Sections/SectionF";
+import { SectionG } from "./Sections/SectionG";
 
 export const Home = () => {
   return (
@@ -13,7 +14,7 @@ export const Home = () => {
       <SectionD />
       <SectionE />
       <SectionF />
-      {/* <SectionG /> */}
+      <SectionG />
     </div>
   );
 };
