@@ -21,3 +21,20 @@
   letter-spacing: 0.5px;
   opacity: 0.8;
 }
+
+/* MObile View CSS */
+
+@media (max-width: 450px) {
+  .sectionB > .title {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+  }
+  .sectionB > .content {
+    font-size: 17px;
+    letter-spacing: unset;
+    line-height: unset;
+    text-align: left;
+    margin-top: 16px;
+  }
+}

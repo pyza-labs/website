@@ -1,3 +1,5 @@
+/* Default CSS */
+
 .sectionGContainer {
   display: flex;
   justify-content: stretch;
@@ -8,7 +10,6 @@
 
 .image {
   width: 30%;
-  min-width: 300px;
   flex: 0.5;
 }
 
@@ -17,3 +18,5 @@
   align-self: flex-start;
   flex: 1;
 }
+
+/* Mobile View CSS */

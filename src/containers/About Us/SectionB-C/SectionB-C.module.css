@@ -1,25 +1,6 @@
-.sectionBC {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70vh;
-  padding: 0 128px;
-  margin: 68px 0;
-  flex-wrap: wrap;
+.container {
+  padding-top: 128px;
+  padding-bottom: 128px;
   background-color: rgba(0, 0, 0, 0.02);
-}
-
-.sectionBC > img {
-  width: 30%;
-  max-width: 400px;
-  min-width: 200px;
-  padding: 4px;
-}
-
-.sectionBC :first-child {
-  margin-top: -200px;
-}
-
-.sectionBC :last-child {
-  margin-bottom: -200px;
+  overflow: hidden;
 }

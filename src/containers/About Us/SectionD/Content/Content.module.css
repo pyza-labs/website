@@ -45,3 +45,18 @@
   line-height: 32px;
   letter-spacing: 0.6px;
 }
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .content > .topContainer > .number {
+    font-size: 48px;
+  }
+  .content > .topContainer > .rightContainer > .rightTitle {
+    font-size: 24px;
+  }
+  .content > .topContainer > .rightContainer > .rightText {
+    text-align: justify;
+    letter-spacing: unset;
+  }
+}

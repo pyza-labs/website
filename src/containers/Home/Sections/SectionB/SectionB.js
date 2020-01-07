@@ -1,41 +1,43 @@
 import React from "react";
-import futbol from "../../../../assets/futbol-connect.png";
-import futbolConnectLogo from "../../../../assets/futbol-connectLogo.png";
-import gradly from "../../../../assets/gradly.png";
-import gradlyLogo from "../../../../assets/gradlyLogo.svg";
+import { Col, Container, Row } from "reactstrap";
 import styles from "./SectionB.module.css";
 
 const ProjectPreview = props => {
   return (
-    <div
-      aria-label={props.reverse ? "reverse" : "plain"}
-      className={styles.projectPreviewContainer}
-    >
-      <div className={styles.imageContainer}>
-        <div className={styles.circle}>
-          <img src={props.imageSrc} />
-        </div>
-      </div>
-      <div className={styles.descriptionContainer}>
-        <img alt="logo" src={props.logo} />
-        <div className={styles.companyName}>
-          <div>{props.name}</div>
-          <div className={styles.line}></div>
-        </div>
-        <div className={styles.description}>{props.description}</div>
-      </div>
-    </div>
+    <Row className={styles.projectPreviewContainer}>
+      <Col sm={{ size: 6, offset: 3 }} md={{ size: 4, offset: 1, order: props.reverse ? 2 : 1 }}>
+        <img width="100%" alt="preview" src={props.imageSrc} />
+      </Col>
+      <Col sm={{ size: 6, offset: 3 }} md={{ size: 4, offset: 1, order: props.reverse ? 1 : 2 }}>
+        <Container className={styles.descriptionContainer}>
+          <Row>
+            <img alt="logo" src={props.logo} />
+          </Row>
+          <Row>
+            <div className={styles.companyName}>
+              <div>{props.name}</div>
+              <div className={styles.line}></div>
+            </div>
+          </Row>
+          <Row>
+            <div className={styles.description}>{props.description}</div>
+          </Row>
+        </Container>
+      </Col>
+    </Row>
   );
 };
 
 export const SectionB = () => {
   return (
-    <div className={styles.container}>
-      <div id="work" className={styles.title}>
-        Clients come to us with a<br></br>vision. We help them build it.
-      </div>
-      <ProjectPreview
-        imageSrc={futbol}
+    <Container fluid>
+      <Row>
+        <Col className={styles.title} lg={{ size: 8, offset: 2 }} md={{ size: 10, offset: 1 }}>
+          Clients come to us with a vision. We help them build it.
+        </Col>
+      </Row>
+      {/* <ProjectPreview
+        imageSrc={futbolConnectMockup}
         name="FutbolConnect"
         logo={futbolConnectLogo}
         description={
@@ -46,7 +48,7 @@ export const SectionB = () => {
       />
       <ProjectPreview
         reverse
-        imageSrc={gradly}
+        imageSrc={futbolConnectMockup}
         name="Gradly"
         logo={gradlyLogo}
         description={
@@ -54,7 +56,7 @@ export const SectionB = () => {
             One stop portal for your <br /> education abroad.
           </div>
         }
-      />
-    </div>
+      /> */}
+    </Container>
   );
 };

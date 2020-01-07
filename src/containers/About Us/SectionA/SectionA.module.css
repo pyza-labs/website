@@ -24,14 +24,13 @@
   width: 20px;
   background-color: black;
   margin-right: 14px;
-  margin-bottom: 6px;
 }
 
 .leftText {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   font-size: 14px;
   font-weight: 600;
   flex: 0.3;
@@ -42,4 +41,23 @@
   font-weight: 300;
   line-height: 32px;
   font-size: 18px;
+}
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .sectionA > .title {
+    font-size: 40px;
+  }
+  .sectionA > .content {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .sectionA > .content > .leftText {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .sectionA > .content > .rightText {
+    text-align: left;
+  }
 }

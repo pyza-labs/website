@@ -5,7 +5,7 @@ export const SectionA = () => {
   return (
     <div className={styles.sectionA}>
       <div className={styles.title}>
-        Your partners through<br></br>the digital age.
+        Your partners through the digital age.
       </div>
       <div className={styles.content}>
         <div className={styles.leftText}>

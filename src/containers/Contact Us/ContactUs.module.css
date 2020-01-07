@@ -1,3 +1,5 @@
+/* Default CSS */
+
 .contactUs {
   display: flex;
   justify-content: flex-start;
@@ -158,7 +160,7 @@
   line-height: 80px;
   margin-top: 24px;
   outline: none;
-  width: 100%;
+  width: 90%;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -179,6 +181,11 @@
   border-radius: 2px;
   margin-right: 16px;
   outline: none;
+  cursor: pointer;
+}
+
+.checkBox:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .checkBox:checked {
@@ -200,4 +207,86 @@
   border-radius: 32px;
   font-size: 16px;
   cursor: pointer;
+  border: none;
+}
+
+/* Mobile View CSS */
+
+@media (max-width: 450px) {
+  .contactUs {
+    flex-wrap: wrap-reverse;
+  }
+  .contactUs > .rightContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .contactUs > .rightContainer > .formContainer {
+    margin: 8px;
+    width: unset;
+  }
+  .contactUs > .rightContainer > .headingRight {
+    font-size: 40px;
+    padding: 4px;
+  }
+  .contactUs > .rightContainer > .subHeadingRight {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .contactUs
+    > .rightContainer
+    > .formContainer
+    > .formSubContainer
+    > .subContainerLeft
+    > .nameInput {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+  .contactUs
+    > .rightContainer
+    > .formContainer
+    > .formSubContainer
+    > .subContainerLeft
+    > .phoneNumberInput {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+  .contactUs
+    > .rightContainer
+    > .formContainer
+    > .formSubContainer
+    > .subContainerRight
+    > .emailAddressInput {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+  .contactUs
+    > .rightContainer
+    > .formContainer
+    > .formSubContainer
+    > .subContainerRight
+    > .budgetRangeInput {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+  .contactUs > .leftContainer {
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .contactUs {
+    justify-content: center;
+  }
+  .contactUs
+    > .rightContainer
+    > .formContainer
+    > .bottomContainer
+    > .projectInput {
+    font-size: 20px;
+    padding: 0 0 0 8px;
+  }
+  .submitContainer > .button {
+    margin-right: 8px;
+    padding: 16px 32px;
+  }
 }
