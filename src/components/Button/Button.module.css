@@ -1,16 +1,24 @@
-.btnContainerLight {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
   width: 180px;
-  background-color: #fff;
   border-radius: 50px;
   font-size: 14px;
   margin: 16px 0;
   padding: 4px;
-  color: #000;
   cursor: pointer;
+}
+
+.container[data-type="light"] {
+  background-color: #fff;
+  color: #000;
+}
+
+.container[data-type="dark"] {
+  background-color: rgba(0, 90, 270, 1);
+  color: white;
 }
 
 .img {
@@ -20,22 +28,7 @@
   margin-left: 12px;
 }
 
-.btnContainerDark {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  width: 180px;
-  background-color: rgba(0, 90, 270, 1);
-  border-radius: 50px;
-  font-size: 14px;
-  margin: 16px 0;
-  padding: 4px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.text {
+.container:hover {
   text-decoration: none;
   color: unset;
 }

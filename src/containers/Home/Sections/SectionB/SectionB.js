@@ -1,8 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import futbolConnectLogo from "../../../../assets/futbol-connectLogo.png";
-import futbolConnectMockup from "../../../../assets/FutbolConnectMockup.png";
-import gradlyLogo from "../../../../assets/gradlyLogo.svg";
 import styles from "./SectionB.module.css";
 
 const ProjectPreview = props => {
@@ -36,10 +33,10 @@ export const SectionB = () => {
     <Container fluid>
       <Row>
         <Col className={styles.title} lg={{ size: 8, offset: 2 }} md={{ size: 10, offset: 1 }}>
-          Clients come to us with a<br></br>vision. We help them build it.
+          Clients come to us with a vision. We help them build it.
         </Col>
       </Row>
-      <ProjectPreview
+      {/* <ProjectPreview
         imageSrc={futbolConnectMockup}
         name="FutbolConnect"
         logo={futbolConnectLogo}
@@ -59,7 +56,7 @@ export const SectionB = () => {
             One stop portal for your <br /> education abroad.
           </div>
         }
-      />
+      /> */}
     </Container>
   );
 };
