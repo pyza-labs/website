@@ -3,6 +3,10 @@
   background-color: rgba(103, 0, 255, 0.6);
 }
 
+.container[data-expanded="expanded"] {
+  background-color: rgba(103, 0, 255);
+}
+
 .container[aria-label="dark"] {
   background-color: #121212;
 }

@@ -1,13 +1,6 @@
 import { Link } from "@reach/router";
 import React, { useState } from "react";
-import {
-  Collapse,
-  Nav,
-  Navbar as NavbarB,
-  NavbarBrand,
-  NavbarToggler,
-  NavItem
-} from "reactstrap";
+import { Collapse, Nav, Navbar as NavbarB, NavbarBrand, NavbarToggler, NavItem } from "reactstrap";
 import pyzaLogo from "../../assets/Logo.png";
 import pyzaLogoOrange from "../../assets/LogoOrange.png";
 import plusIcon from "../../assets/white.svg";
@@ -17,7 +10,7 @@ export const Navbar = props => {
   const [expanded = false, setExpanded] = useState();
 
   return (
-    <NavbarB className={Styles.container} aria-label={props.dark ? 'dark' : 'light'} dark expand="md" fixed="top">
+    <NavbarB data-expanded={expanded ? 'expanded' : 'collapsed'} className={Styles.container} aria-label={props.dark ? 'dark' : 'light'} dark expand="md" fixed="top">
       <NavbarBrand>
         <Link className="navbar-brand" to="/">
           <img
