@@ -7,7 +7,7 @@ export const SectionA = () => {
   return (
     <Container fluid className={Styles.container}>
       <Row className="align-items-center">
-        <Col md="12" lg={{ size: 10, offset: 1 }}>
+        <Col md="12 mb-5" lg={{ size: 10, offset: 1 }}>
           <div className={Styles.titleText}>
             Next level products,
             Delivered.
