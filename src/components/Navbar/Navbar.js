@@ -11,7 +11,7 @@ export const Navbar = props => {
 
   return (
     <NavbarB data-expanded={expanded ? 'expanded' : 'collapsed'} className={Styles.container} aria-label={props.dark ? 'dark' : 'light'} dark expand="md" fixed="top">
-      <NavbarBrand>
+      <NavbarBrand onClick={() => setExpanded(false)}>
         <Link className="navbar-brand" to="/">
           <img
             className={Styles.logo}
